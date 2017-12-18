@@ -1,0 +1,10 @@
+d:\dev\jqueryRazorpagesSimpleFileUpload\bin\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.deps.json
+d:\dev\jqueryRazorpagesSimpleFileUpload\bin\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.runtimeconfig.json
+d:\dev\jqueryRazorpagesSimpleFileUpload\bin\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.runtimeconfig.dev.json
+d:\dev\jqueryRazorpagesSimpleFileUpload\bin\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.dll
+d:\dev\jqueryRazorpagesSimpleFileUpload\bin\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.pdb
+d:\dev\jqueryRazorpagesSimpleFileUpload\obj\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.csproj.CoreCompileInputs.cache
+d:\dev\jqueryRazorpagesSimpleFileUpload\obj\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.AssemblyInfoInputs.cache
+d:\dev\jqueryRazorpagesSimpleFileUpload\obj\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.AssemblyInfo.cs
+d:\dev\jqueryRazorpagesSimpleFileUpload\obj\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.dll
+d:\dev\jqueryRazorpagesSimpleFileUpload\obj\Debug\netcoreapp2.0\jqueryRazorpagesSimpleFileUpload.pdb
