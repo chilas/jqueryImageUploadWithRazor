@@ -1,4 +1,25 @@
-@page
-@model ImageUploadModel
-
+@page 
+@model ImageUploadModel 
+@{ 
+    ViewData["Title"] = "Image Uploader"; 
+}
 <h1>Image upload page</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h2>Upload Image</h2>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input name="image" type="file" class="form-control" accept="image/*"/>
+            </div>
+            <input type="submit" value="Upload" class="btn btn-default" />
+        </form>
+    </div>
+    <div class="col-md-8">
+        <h2>Recent Upload</h2>
+        
+        <div>
+            <img class="img-responsive" src="@Model.RecentImagePath" />
+        </div>
+    </div>
+</div>
