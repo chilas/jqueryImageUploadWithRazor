@@ -3,23 +3,47 @@
 @{ 
     ViewData["Title"] = "Image Uploader"; 
 }
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/dropzone.css" />
+}
+
 <h1>Image upload page</h1>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <h2>Upload Image</h2>
-        <form method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <input name="image" type="file" class="form-control" accept="image/*"/>
+        <form method="post" enctype="multipart/form-data" id="imageUploadForm" class="dropzone">
+            <div class="fallback">
+                 <div class="form-group">
+                    <input name="image" type="file" class="form-control" accept="image/*"/>
+                </div>
+                 <input type="submit" value="Upload" class="btn btn-default" />
             </div>
-            <input type="submit" value="Upload" class="btn btn-default" />
         </form>
     </div>
-    <div class="col-md-8">
-        <h2>Recent Upload</h2>
+    
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Recent Upload</h3>
         
         <div>
-            <img class="img-responsive" src="@Model.RecentImagePath" />
+            <img id="recentImage" class="img-responsive img-thumbnail" width="500"/>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script src="~/lib/dropzone.js"></script>
+    <script>
+        $("#imageUploadForm").dropzone({ 
+            url: "/imageupload",
+            paramName: "image", 
+            acceptedFiles: "image/*",
+            success: function(file){
+                $("#recentImage").attr('src', `./uploads/${file.name}`);
+            }
+        });
+    </script>
+}
